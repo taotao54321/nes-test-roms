@@ -292,7 +292,7 @@ CUSTOM_HEADER=1
 	.byte $01 ; UNROM, vertical mirroring
 .else
 	.byte 2,1 ; 32K PRG, 8K CHR
-	.byte $31 ; CNROM, vertical mirroring
+	.byte $01 ; CNROM, vertical mirroring
 .segment "CHARS"
 	.incbin "ascii.chr"
 	.align $2000
